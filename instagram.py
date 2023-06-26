@@ -30,6 +30,7 @@ time.sleep(5)
 browser.find_element(
     By.XPATH, "//button[normalize-space()='Allow all cookies']").click()
 time.sleep(10)
+
 browser.find_element(By.NAME, "username").send_keys(username)
 browser.find_element(By.NAME, 'password').send_keys(passwd)
 browser.find_element(By.XPATH, "//button[@type='submit']").click()
